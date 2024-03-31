@@ -38,29 +38,28 @@ def Rscore(x,p,d):
         return 1
 
 def split_rfm_seg_quartile(x):
-    if x == 3:
+    if x == 12:
         return 'Loyal Customers'
-    elif x == 4:
-        return 'Potential Loyalist'
-    elif x == 5:
-        return 'Recent Customers'
-    elif x == 6:
-        return 'Promising'
-    elif x == 7:
-        return 'Customers Needing Attention'
-    elif x == 8:
-        return 'About To Sleep'
-    elif x == 9:
-        return 'At Risk'
-    elif x == 10:
-        return 'Cant Lose Them'
     elif x == 11:
+        return 'Potential Loyalist'
+    elif x == 10:
+        return 'Recent Customers'
+    elif x == 9:
+        return 'Promising'
+    elif x == 8:
+        return 'Customers Needing Attention'
+    elif x == 7:
+        return 'About To Sleep'
+    elif x == 6:
+        return 'At Risk'
+    elif x == 5:
+        return 'Cant Lose Them'
+    elif x == 4:
         return 'Hibernating'
-    elif x == 12:
+    elif x == 3:
         return 'Lost'
     else:
         return 'No activity'
-
 def main():
     pd00 = pd.read_csv(RFM_FILE)
     pd00['CustomerID'] = pd00['CustomerID'].str.replace(r'\.0$', '')
