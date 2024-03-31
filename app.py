@@ -103,11 +103,11 @@ def main():
     if choice == '🎓️ Data Insights':
         st.write("""There are 5766 customers with transactional data""")
         
-        st.subheader ("Number order over the year")
+        st.subheader ("Number of orders over the year")
         image = 'rfm_year_month_order.png'
         st.image(image, width=800)
         
-        st.subheader ("Number of customer in different country")
+        st.subheader ("Number of customers in different country")
         image = 'rfm_country.png'
         st.image(image, width=800)
         
@@ -117,8 +117,8 @@ def main():
         
         
         # Segmentation description
-        st.subheader ("There are 11 RFM segments with following description:")
-        with st.expander("Thông tin các nhóm khách hàng", expanded=False):
+        st.subheader ("There are 10 RFM segments with following description:")
+        with st.expander("Customer Segmentation Description", expanded=False):
             st.write(RFM_segmentation_description)
             st.write("")
         image = 'rfm_squarify.png'
@@ -135,7 +135,7 @@ def main():
             **Average Recency (days), Frequency (number of orders), Monetary (VND) for each group**
             """)
             st.write("")
-            rfm_mean_image = 'rfm_mean.png'
+            rfm_mean_image = 'rfm_mean.jpeg'
             st.image(rfm_mean_image, width=600)
             st.write("")
     
@@ -154,7 +154,8 @@ def main():
 
             if customer_id: 
                 if customer_id in pd00['CustomerID'].values:
-                    st.dataframe(pd00[pd00['CustomerID'] == customer_id][['CustomerID','Recency','Frequency','Monetary','RFM_Name']],width=1000)
+                    st.dataframe(pd00[pd00['CustomerID'] == customer_id][['CustomerID','Recency','Frequency','Monetary','RFM_Name']],
+                                 width=1000)
                 else:
                     st.error(f"CustomerID {customer_id} does not exist")      
         else:
