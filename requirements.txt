@@ -1,0 +1,16 @@
+streamlit
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+regex
+demoji
+pyvi
+imblearn
+scikit-learn
+pickle
+underthesea
+xgboost
+datetime
+imbalanced-learn
