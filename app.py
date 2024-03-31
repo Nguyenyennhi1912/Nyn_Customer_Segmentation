@@ -154,8 +154,7 @@ def main():
 
             if customer_id: 
                 if customer_id in pd00['CustomerID'].values:
-                    st.dataframe(pd00[pd00['CustomerID'] == customer_id][['CustomerID','Recency','Frequency','Monetary','RFM_Name']],
-                                 hide_index=False,width=1000)
+                    st.dataframe(pd00[pd00['CustomerID'] == customer_id][['CustomerID','Recency','Frequency','Monetary','RFM_Name']],width=1000)
                 else:
                     st.error(f"CustomerID {customer_id} does not exist")      
         else:
