@@ -135,7 +135,7 @@ def main():
             **Average Recency (days), Frequency (number of orders), Monetary (VND) for each group**
             """)
             st.write("")
-            rfm_mean_image = 'rfm_mean.jpeg'
+            rfm_mean_image = 'rfm_mean.png'
             st.image(rfm_mean_image, width=600)
             st.write("")
     
