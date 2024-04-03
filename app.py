@@ -133,9 +133,8 @@ def main():
                     - Customers from other regions account for an insignificant amount
                     
                     **Solutions:**
-                    
-                        - Businesses should focus on analyzing the United Kingdom market specifically to retain customers in this area
-                        - At the same time, businesses can focus on analyzing market trends in other regions to come up with policies to expand their market, as well as boost revenue from many regions.
+                    - Businesses should focus on analyzing the United Kingdom market specifically to retain customers in this area
+                    - At the same time, businesses can focus on analyzing market trends in other regions to come up with policies to expand their market, as well as boost revenue from many regions.
                  """)
         st.subheader ("Distribution of Receny, Frequency, Monetary value")
         image = 'rfm_distribution.png'
