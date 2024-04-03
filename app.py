@@ -68,7 +68,7 @@ def main():
     limit_frequency = 1000
     limit_monetary = 1000000 
     
-    st.markdown("<h1 style='text-align: center; color: blue; '>PROJECT: CUSTOMER SEGMENTATION</h1>", unsafe_allow_html=True) 
+    st.markdown("<h1 style='text-align: center; color: blue; '>PROJECT: CUSTOMER-SEGMENTATION</h1>", unsafe_allow_html=True) 
 
     menu = ["📚 Business Objective", "🎓️ Data Insights", "🎯 Customer Segmentation"]
     choice = st.sidebar.selectbox('Menu', menu)
