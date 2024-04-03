@@ -80,7 +80,7 @@ def main():
         with col1:
             st.write(' ')
         with col2:
-            st.image("customer-segmentation.jpg", width=600)  
+            st.image("customer-segmentation.jpg", width=500)  
         with col3:
             st.write(' ')
           
