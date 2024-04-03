@@ -104,8 +104,14 @@ def main():
                 - **Frequency**: How often has a customer transacted or interacted with the brand during a particular period of time? Clearly, customers with frequent activities are more engaged, and probably more loyal, than customers who rarely do so. And one-time-only customers are in a class of their own. 
                 - **Monetary**: Also referred to as “monetary value,” this factor reflects how much a customer has spent with the brand during a particular period of time. Big spenders should usually be treated differently than customers who spend little. Looking at monetary divided by frequency indicates the average purchase amount – an important secondary factor to consider when segmenting customers. """)
         
-        st.subheader ("📃 About Dataset")        
-        st.write("Dataset Information: [Click here](https://archive.ics.uci.edu/dataset/352/online+retail)")
+        st.subheader ("📃 About Dataset")
+            
+        st.write("""
+                    The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+                    This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.
+                    
+                    Dataset Information: [Click here](https://archive.ics.uci.edu/dataset/352/online+retail)
+                 """)
         st.subheader ("👭 Team members")
         st.write("""
         Le Yen Ha
