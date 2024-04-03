@@ -76,8 +76,8 @@ def main():
     choice = st.sidebar.selectbox('Menu', menu)
     
     if choice == '📚 Business Objective':
-        st.image("customer-segmentation.jpg", width=800)    
-        st.subheader ("👨‍💼 Customer Segmentation wwith RFM")        
+        st.image("customer-segmentation.jpg", width=800, text-align: center)    
+        st.subheader ("👨‍💼 Customer Segmentation with RFM")        
         image = 'rfm_image.jpeg'
         st.image(image, caption='RFM Analysis', width=800)
         
