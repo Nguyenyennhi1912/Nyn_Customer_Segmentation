@@ -105,7 +105,7 @@ def main():
                 - **Monetary**: Also referred to as “monetary value,” this factor reflects how much a customer has spent with the brand during a particular period of time. Big spenders should usually be treated differently than customers who spend little. Looking at monetary divided by frequency indicates the average purchase amount – an important secondary factor to consider when segmenting customers. """)
         
         st.subheader ("📃 About Dataset")        
-        st.subheader("[Link data](https://csc.edu.vn)")
+        st.write("[Click here](https://csc.edu.vn)")
         st.subheader ("👭 Team members")
         st.write("""
         Le Yen Ha
