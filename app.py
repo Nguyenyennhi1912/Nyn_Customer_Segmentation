@@ -77,7 +77,15 @@ def main():
     
     if choice == '📚 Business Objective':
         st.image("customer-segmentation.jpg", width=800)  
-
+        st.subheader ("🎯 Why is it necessary for customer segmentation?")
+        st.write("""
+                - Build better marketing campaigns
+                - Improve products and services => improve customer satisfaction
+                - Promote expanding new products and services suitable for the business's target audience.
+                - Price optimization
+                - Increase revenue and profits as well as reduce sales costs  
+        """)
+                
         st.subheader ("👨‍💼 Customer Segmentation with RFM")        
         image = 'rfm_image.jpeg'
         st.image(image, caption='RFM Analysis', width=800)
