@@ -116,7 +116,12 @@ def main():
         st.subheader ("Number of orders over the year")
         image = 'rfm_year_month_order.png'
         st.image(image, width=800)
-        
+        st.write("""
+        - From October 2010 to August 2011, the number of orders placed online did not differ much.
+        - Starting from September 2011 to November 2011, the number of orders placed increased significantly.
+        - Especially in November 2011, there was the highest number of orders, reaching about 83,635 orders.
+        - However, at the end of 2011, the number of orders decreased sharply to only 25,165 orders. (The explanation for the suddenly lower number of orders in December 2011 is that the dataset was only collected until December 9, 2011)
+        """)
         st.subheader ("Number of customers in different country")
         image = 'rfm_country.png'
         st.image(image, width=800)
