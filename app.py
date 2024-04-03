@@ -76,11 +76,11 @@ def main():
     if choice == '📚 Business Objective':
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.write('')
+            st.write(' ')
         with col2:
             st.image("customer-segmentation.jpg", width=500)  
         with col3:
-            st.write(' ')
+            st.write('')
           
         st.subheader ("👨‍💼 Customer Segmentation with RFM")        
         image = 'rfm_image.jpeg'
