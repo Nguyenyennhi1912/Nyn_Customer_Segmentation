@@ -69,7 +69,7 @@ def main():
     limit_monetary = 1000000 
     
     title = "👨‍👨‍👧‍👦 CUSTOMER SEGMENTATION"
-    st.set_page_config(page_title=title,layout="wide")
+    st.set_page_config(page_title=title,layout="centered")
     st.title(title) 
 
     menu = ["📚 Business Objective", "🎓️ Data Insights", "🎯 Customer Segmentation"]
