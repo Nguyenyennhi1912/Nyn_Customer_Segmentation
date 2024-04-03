@@ -68,16 +68,20 @@ def main():
     limit_frequency = 1000
     limit_monetary = 1000000 
     
-    st.markdown("<h1 style='text-align: center; color: blue; '>PROJECT: CUSTOMER SEGMENTATION</h1>", unsafe_allow_html=True)
-    #title = ""
-    #st.set_page_config(page_title=title,layout="wide")
-    #st.title(title) 
+    st.markdown("<h1 style='text-align: center; color: blue; '>PROJECT: CUSTOMER SEGMENTATION</h1>", unsafe_allow_html=True) 
 
     menu = ["📚 Business Objective", "🎓️ Data Insights", "🎯 Customer Segmentation"]
     choice = st.sidebar.selectbox('Menu', menu)
     
     if choice == '📚 Business Objective':
-        st.image("customer-segmentation.jpg", width=800)    
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.write(' ')
+        with col2:
+            st.image("customer-segmentation.jpg", width=800)  
+        with col3:
+            st.write(' ')
+          
         st.subheader ("👨‍💼 Customer Segmentation with RFM")        
         image = 'rfm_image.jpeg'
         st.image(image, caption='RFM Analysis', width=800)
