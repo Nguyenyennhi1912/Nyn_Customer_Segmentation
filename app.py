@@ -69,7 +69,7 @@ def main():
     limit_monetary = 1000000 
     
     title = "👨‍👨‍👧‍👦 CUSTOMER SEGMENTATION"
-    st.set_page_config(page_title=title,layout="centered")
+    st.set_page_config(page_title=title,layout="wide")
     st.title(title) 
 
     menu = ["📚 Business Objective", "🎓️ Data Insights", "🎯 Customer Segmentation"]
@@ -80,7 +80,7 @@ def main():
         with col1:
             st.write(' ')
         with col2:
-            st.image("customer-segmentation.jpg", width=400)  
+            st.image("customer-segmentation.jpg", width=600)  
         with col3:
             st.write(' ')
           
