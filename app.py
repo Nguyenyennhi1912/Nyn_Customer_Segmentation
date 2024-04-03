@@ -68,7 +68,8 @@ def main():
     limit_frequency = 1000
     limit_monetary = 1000000 
     
-    title = "👨‍👨‍👧‍👦 CUSTOMER SEGMENTATION"
+    st.markdown("<h1 style='text-align: center; color: black;'>PROJECT 3: CUSTOMER SEGMENTATION</h1>, unsafe_allow_html=True)
+    #title = ""
     st.set_page_config(page_title=title,layout="wide")
     st.title(title) 
 
