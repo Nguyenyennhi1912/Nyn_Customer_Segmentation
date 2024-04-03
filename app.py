@@ -128,7 +128,13 @@ def main():
         st.subheader ("Number of customers in different country")
         image = 'rfm_country.png'
         st.image(image, width=800)
-        
+        st.write("""
+                    - The main customers of the business are mostly from the United Kingdom
+                    - Customers from other regions account for an insignificant amount
+                    **Solutions:**
+                        - Businesses should focus on analyzing the United Kingdom market specifically to retain customers in this area
+                        - At the same time, businesses can focus on analyzing market trends in other regions to come up with policies to expand their market, as well as boost revenue from many regions.
+                 """)
         st.subheader ("Distribution of Receny, Frequency, Monetary value")
         image = 'rfm_distribution.png'
         st.image(image, width=800)
