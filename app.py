@@ -36,7 +36,7 @@ def Rscore(x,p,d):
     elif x <= d[p][0.6]:
         return 3
     elif x <= d[p][0.8]:
-        return 4
+        return 2
     else:
         return 1
 
