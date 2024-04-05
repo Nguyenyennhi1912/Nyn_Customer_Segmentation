@@ -80,7 +80,7 @@ def split_rfm_seg(x):
 
 def main():
     pd00 = pd.read_csv(rfm_file)
-    pd01 = pd.read_csv(customer_transaction, dtype={'InvoiceNo': str})
+    #pd01 = pd.read_csv(customer_transaction, dtype={'InvoiceNo': str})
     #pd00['CustomerID'] = pd00['CustomerID'].str.replace(r'\.0$', '')
 
     limit_recency = 365
@@ -215,7 +215,7 @@ def main():
                     if customer_id in pd00['CustomerID'].values:
                         st.dataframe(pd00[pd00['CustomerID'] == customer_id][['CustomerID','Country','Recency','Frequency','Monetary','Segment']].reset_index(drop=True), width=1000)
                         st.markdown("Detail transaction:")  
-                        st.dataframe(pd01[pd01['CustomerID'] == customer_id][['Date','InvoiceDate','InvoiceNo','StockCode','Description','Quantity','UnitPrice']].sort_values('Date').reset_index(drop=True), width=1000)
+                        #st.dataframe(pd01[pd01['CustomerID'] == customer_id][['Date','InvoiceDate','InvoiceNo','StockCode','Description','Quantity','UnitPrice']].sort_values('Date').reset_index(drop=True), width=1000)
                     else:
                         st.error(f"CustomerID {customer_id} does not exist")
             else:
@@ -235,7 +235,7 @@ def main():
                 st.dataframe(pd00[pd00['CustomerID'] == option][['CustomerID','Country','Recency','Frequency','Monetary','Segment']].reset_index(drop=True), 
                          width=1000)
                 st.markdown("Detail transaction:")  
-                st.dataframe(pd01[pd01['CustomerID'] == option][['Date','InvoiceDate','InvoiceNo','StockCode','Description','Quantity','UnitPrice']].sort_values('Date').reset_index(drop=True), width=1000)
+               # st.dataframe(pd01[pd01['CustomerID'] == option][['Date','InvoiceDate','InvoiceNo','StockCode','Description','Quantity','UnitPrice']].sort_values('Date').reset_index(drop=True), width=1000)
 
         else:
             # 2.3.1 Input thông tin mới khách hàng
