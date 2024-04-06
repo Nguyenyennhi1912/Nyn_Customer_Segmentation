@@ -164,7 +164,7 @@ def main():
         image = 'rfm_distribution.png'
         st.image(image, width=800)
         
-        image = 'rfm_quantile.png'
+        image = 'rfm_quintile.png'
         st.image(image, width=800)
         st.write("""
                     - The average number of orders is 3.46, with a wide range (1 to 209).
