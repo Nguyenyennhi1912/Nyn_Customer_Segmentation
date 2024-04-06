@@ -164,8 +164,8 @@ def main():
         image = 'rfm_distribution.png'
         st.image(image, width=800)
         
-        image = 'rfm_quintile.png'
-        st.image(image, width=800)
+        #image = 'rfm_quintile.png'
+        #st.image(image, width=800)
         st.write("""
                     - The average number of orders is 3.46, with a wide range (1 to 209).
                     - On average, customers made purchases over 3.15 days, with a similar wide range (1 to 132).
@@ -179,7 +179,7 @@ def main():
         with st.expander("Customer Segmentation Description", expanded=False):
             st.write(RFM_segmentation_description)
             st.write("")
-        image = 'rfm_squarify.png'
+        image = 'rfm_quintile.png'
         st.image(image, width=800)
             
     if choice == '🎯 Customer Segmentation':    
