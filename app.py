@@ -163,7 +163,12 @@ def main():
         st.subheader ("Distribution of Receny, Frequency, Monetary value")
         image = 'rfm_distribution.png'
         st.image(image, width=800)
-        
+        st.write("""
+                    - The average number of orders is 3.46, with a wide range (1 to 209).
+                    - On average, customers made purchases over 3.15 days, with a similar wide range (1 to 132).
+                    - The average purchase amount is 1849.93, with a high standard deviation of 7919.03. This indicates a wide distribution of purchase values.
+                    - The average DayDiff of 117.07 with a standard deviation of 111.33 highlights the irregularity in customer purchase intervals.
+                 """)
         #image = 'rfm_quintile.png'
         #st.image(image, width=800)
 
@@ -176,12 +181,7 @@ def main():
             st.write("")
         image = 'rfm_quintile.png'
         st.image(image, width=800)
-        st.write("""
-                    - The average number of orders is 3.46, with a wide range (1 to 209).
-                    - On average, customers made purchases over 3.15 days, with a similar wide range (1 to 132).
-                    - The average purchase amount is 1849.93, with a high standard deviation of 7919.03. This indicates a wide distribution of purchase values.
-                    - The average DayDiff of 117.07 with a standard deviation of 111.33 highlights the irregularity in customer purchase intervals.
-                 """)
+        
     if choice == '🎯 Customer Segmentation':    
         st.subheader ("Input customer information")
         choice_input = st.radio("Please choose", options=["1. Input customerID", "2. Search customerID", "3. Input new customer information"])
